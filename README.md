@@ -375,47 +375,9 @@ admira-go/
 └── docker-compose.yml
 ```
 
-### Comandos de Desarrollo
-
-```bash
-# Ejecutar tests
-go test ./...
-
-# Ejecutar tests con coverage
-go test -cover ./...
-
-# Formatear código
-go fmt ./...
-
-# Linter (si está instalado)
-golangci-lint run
-
-# Compilar para diferentes plataformas
-GOOS=linux GOARCH=amd64 go build -o admira-linux cmd/api/main.go
-GOOS=windows GOARCH=amd64 go build -o admira.exe cmd/api/main.go
-```
-
-### Debugging
-
-```bash
-# Ejecutar con logs detallados
-DEBUG=1 go run cmd/api/main.go
-
-# Profiling (opcional)
-go run cmd/api/main.go -cpuprofile=cpu.prof
-go tool pprof cpu.prof
-```
-
 ---
 
 
 <div align="center">
-
-**Admira ETL + API**  
-*Sistema de procesamiento de datos de marketing digital*
-
-[![Go Version](https://img.shields.io/badge/Go-1.22+-blue.svg)](https://golang.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-MVP-orange.svg)]()
 
 </div>
